@@ -9,35 +9,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
 
+    <!-- BACKGROUND BLOBS -->
     <div class="background-animation">
         <div class="blob blob-1"></div>
         <div class="blob blob-2"></div>
         <div class="blob blob-3"></div>
     </div>
 
+    <!-- NAVBAR -->
     <nav id="navbar">
         <div class="nav-container">
             <div class="logo-wrapper">
                 <a href="#home"><img src="images/logo.png" alt="Swap-Up Logo" class="logo-img"></a>
                 <div class="logo"><a href="#home" class="linkLogo">Swap-Up</a></div>
             </div>
-
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Business Model</a></li>
                 <li><a href="#team">Team</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <a href="#" class="login-btn">Open App</a>
+            <!-- <a href="#" class="login-btn">Open App</a> -->
             <button class="mobile-toggle">☰</button>
         </div>
     </nav>
 
+    <!-- MAIN SECTION -->
     <section id="home" class="main">
         <div class="main-content">
             <h1>Smart Shift Swap System</h1>
@@ -56,20 +58,22 @@
                         <div class="mockup-dot" style="background: #28c347;"></div>
                     </div>
                     <div class="mockup-body">
-                        <img src="images/image.png" alt="">
-                        <img src="images/image copy.png" alt="">
-                        <img src="images/image copy 2.png" alt="">
+                        <img src="images/demo2.jpg" alt="Demo image1">
+                        <img src="images/demo3.jpg" alt="Demo image2">
+                        <img src="images/demo4.jpg" alt="Demo image3">
+                        <img src="images/demo1.jpg" alt="Demo image4">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ABOUT -->
     <section id="about">
-        <div style="width: 100%; max-width: 1200px; margin: 0 auto;">
+        <div style="width: 90%; max-width: 1100px; margin: 0 auto;">
             <h2 class="section-title">About the Project</h2>
             <div class="glass-card" style="text-align: center;">
-                <p style="font-size: 18px; color: white; line-height: 3;">
+                <p style="font-size: 18px; color: white; line-height: 2.5;">
                     The Smart Shift Swap System is designed to eliminate the inefficiencies and conflicts involved in manual shift swapping. 
                     Instead of random requests, our system uses predefined criteria to determine the most suitable replacement. 
                     By analyzing availability, past swap frequency, overtime history, and current workload, Shift-UP recommends 
@@ -79,8 +83,9 @@
         </div>
     </section>
 
+    <!-- FEATURES -->
     <section id="features">
-        <div style="width: 100%; max-width: 1200px;">
+        <div style="width: 100%; max-width: 1200px; margin: auto;">
             <h2 class="section-title">Key Features</h2>
             <div class="grid-container grid-features">
                 <div class="glass-card">
@@ -117,60 +122,96 @@
         </div>
     </section>
 
+    <!-- PRICING -->
+    <section id="pricing">
+        <h2 class="section-title">Business Model</h2>
+
+        <!-- Toggle -->
+        <div class="pricing-toggle">
+            <button class="toggle-btn active">Monthly</button>
+            <button class="toggle-btn">Yearly</button>
+        </div>
+
+        <!-- Pricing Cards -->
+        <div class="pricing-grid">
+
+            <!-- FREE PLAN -->
+            <div class="price-card">
+                <h3>Free</h3>
+                <p class="sub">Great for students and personal use</p>
+                <div class="price" data-monthly="0.00" data-yearly="0.00">$0.00<span>/month</span></div>
+                <ul class="price-features">
+                    <li>✔ Upload 2D floor plans</li>
+                    <li>✔ Limited Auto 3D model generation</li>
+                    <li>✔ Access to Archion View</li>
+                    <li>✔ 2GB Storage for Files</li>
+                </ul>
+                <button class="btn-big btn-primary" style="width:100%;">Get Started</button>
+            </div>
+
+            <!-- PRO PLAN -->
+            <div class="price-card highlight">
+                <h3>Pro Plan</h3>
+                <p class="sub">Great for Freelancers & Professional use</p>
+                <div class="price" data-monthly="18.00" data-yearly="15.00">$18.00<span>/month</span></div>
+                <ul class="price-features">
+                    <li>✔ High-precision 3D generation</li>
+                    <li>✔ Full Archion Sim features</li>
+                    <li>✔ Advanced sharing controls</li>
+                    <li>✔ 100GB Storage for Files</li>
+                </ul>
+                <button class="btn-big btn-primary" style="width:100%;">Continue with Pro</button>
+            </div>
+
+            <!-- ENTERPRISE PLAN -->
+            <div class="price-card">
+                <h3>Enterprise Plan</h3>
+                <p class="sub">Great for Large scale enterprises</p>
+                <div class="price" data-monthly="22.00" data-yearly="20.00">$22.00<span>/month</span></div>
+                <ul class="price-features">
+                    <li>✔ Team workspaces & shared assets</li>
+                    <li>✔ Version history & model comparisons</li>
+                    <li>✔ Priority support</li>
+                    <li>✔ 5TB Shared Storage for Files</li>
+                </ul>
+                <button class="btn-big btn-dark" style="width:100%;">Contact team</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TEAM -->
     <section id="team">
-        <div style="width: 100%; max-width: 1200px;">
+        <div style="width: 60%; max-width: 1200px; margin:auto;">
             <h2 class="section-title">Our Crew</h2>
             <div class="grid-container">
-                <!--Member 1-->
                 <div class="glass-card" style="text-align: center;">
-                    <div class="team-avatar">
-                        <img src="images/vihara.png" alt="Vihara Senanayake">
-                    </div>
+                    <div class="team-avatar"><img src="images/vihara.png" alt="Vihara Senanayake"></div>
                     <h3>Vihara Senanayaka</h3>
                     <p>Full Stack Developer</p>
                 </div>
-                
-                <!--Member 2-->
                 <div class="glass-card" style="text-align: center;">
-                    <div class="team-avatar">
-                        <img src="images/umesh.jpg" alt="Umesh Isuranga">
-                    </div>
+                    <div class="team-avatar"><img src="images/umesh.jpg" alt="Umesh Isuranga"></div>
                     <h3>Umesh Isuranga</h3>
                     <p>Full Stack Developer</p>
                 </div>
-
-                <!--Member 3-->
                 <div class="glass-card" style="text-align: center;">
-                    <div class="team-avatar">
-                        <img src="images/Ashwin.png" alt="Ashwin Miron">
-                    </div>
+                    <div class="team-avatar"><img src="images/Ashwin.png" alt="Ashwin Miron"></div>
                     <h3>Ashwin Miron</h3>
                     <p>Project Manager</p>
                 </div>
-
-                <!--Member 4-->
                 <div class="glass-card" style="text-align: center;">
-                    <div class="team-avatar">
-                        <img src="images/esala.png" alt="Esala Gamage">
-                    </div>
+                    <div class="team-avatar"><img src="images/esala.png" alt="Esala Gamage"></div>
                     <h3>Esala Gamage</h3>
                     <p>Back-End Developer</p>
                 </div>
-
-                <!--Member 5-->
                 <div class="glass-card" style="text-align: center;">
-                    <div class="team-avatar">
-                        <img src="images/Vishwa.png" alt="Vishwa Kamal">
-                    </div>
-                    <h3>Vishwa Kamal</h3>
+                    <div class="team-avatar"><img src="images/Vishwa.png" alt="Vishwa Kamal"></div>
+                    <h3>Vishwa Pathirana</h3>
                     <p>Front-End Developer</p>
                 </div>
-
-                <!--Member 6-->
                 <div class="glass-card" style="text-align: center;">
-                    <div class="team-avatar">
-                        <img src="images/dulaj.jpg" alt="Dulaj Yuthsara">
-                    </div>
+                    <div class="team-avatar"><img src="images/dulaj.jpg" alt="Dulaj Yuthsara"></div>
                     <h3>Dulaj Yuthsara</h3>
                     <p>Front-End Developer</p>
                 </div>
@@ -178,25 +219,26 @@
         </div>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact">
         <div class="contact-wrapper">
             <h2 style="margin-bottom: 20px; text-align: center;">Contact Us</h2>
             <form action="contact.php" method="POST">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea rows="4" placeholder="Your Message" required></textarea>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
                 <button class="btn-big btn-primary" style="width: 100%; justify-content: center;">Send Message</button>
             </form>
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
         <div class="footer-container">
             <div class="footer-col">
                 <h4>Swap-Up</h4>
                 <p style="color: #ccc;">Smart shift scheduling solution for the hospitality industry.</p>
             </div>
-            
             <div class="footer-col">
                 <h4>Quick Links</h4>
                 <ul>
@@ -206,16 +248,14 @@
                     <li><a href="#team">Team</a></li>
                 </ul>
             </div>
-            
             <div class="footer-col">
                 <h4>Legal</h4>
                 <ul>
-                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="privacy.html"  target="_blank">Privacy Policy</a></li>
                     <li><a href="terms.html" target="_blank">Terms of Service</a></li>
                     <li><a href="#">Cookie Policy</a></li>
                 </ul>
             </div>
-            
             <div class="footer-col">
                 <h4>Contact</h4>
                 <ul>
@@ -225,13 +265,12 @@
                 </ul>
             </div>
         </div>
-        
         <div class="footer-social">
             <a href="https://www.facebook.com/share/1F8THg51bx/?mibextid=wwXIfr" class="social-bubble" target="_blank">
                 <i class="fab fa-facebook"></i>
             </a>
             <a href="https://www.instagram.com/swap___up?utm_source=qr&igsh=MWU0a3Z2NXhkdXpqdA==" class="social-bubble" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
+                <i class="fab fa-instagram"></i>
             </a>
             <a href="https://x.com/swapup__?s=21" class="social-bubble" target="_blank">
                 <i class="fab fa-twitter"></i>
@@ -246,7 +285,7 @@
     </footer>
 
     <script>
-        // navbar
+        // Navbar scroll
         window.addEventListener('scroll', () => {
             const navbar = document.getElementById('navbar');
             if (window.scrollY > 50) {
@@ -255,6 +294,32 @@
                 navbar.classList.remove('scrolled');
             }
         });
+
+        // Pricing toggle
+        const toggleBtns = document.querySelectorAll(".toggle-btn");
+        const priceElements = document.querySelectorAll(".price");
+
+        toggleBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                toggleBtns.forEach(b => b.classList.remove("active"));
+                btn.classList.add("active");
+                const isYearly = btn.textContent.trim() === "Yearly";
+
+                priceElements.forEach(price => {
+                    const monthly = price.dataset.monthly;
+                    const yearly = price.dataset.yearly;
+                    price.innerHTML = `$${isYearly ? yearly : monthly}<span>${isYearly ? '/year' : '/month'}</span>`;
+                });
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileToggle = document.querySelector(".mobile-toggle");
+        const navContainer = document.querySelector(".nav-container");
+        mobileToggle.addEventListener("click", () => {
+            navContainer.classList.toggle("open");
+        });
     </script>
+
 </body>
 </html>
