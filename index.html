@@ -1,325 +1,562 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shift-UP | Smart Shift Scheduling</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Swap-up — Shift Management, Simplified.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <!-- BACKGROUND BLOBS -->
-    <div class="background-animation">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#">
+    <img src="images/logo.png" alt="Swap-up Logo" class="nav-logo-img" />
+    <span class="nav-logo-text">Swap-up</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#features">Features</a></li>
+    <li><a href="#how">How It Works</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="nav-btn btn-primary">Get Started Free</button>
+  </div>
+</nav>
+ 
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-left fade-up">
+        <div class="hero-badge"><span></span> Now available for teams of all sizes</div>
+        <h1 class="hero-title">
+          Shift Management,<br>
+          <span class="grad-text">Simplified.</span>
+        </h1>
+        <p class="hero-sub">The ultimate tool for teams to manage schedules, trade shifts, and communicate—without the back-and-forth friction.</p>
+        <div class="hero-actions">
+          <button class="btn-hero">Start Free Today <span>→</span></button>
+          <button class="btn-demo schedule-demo-btn">
+            <div class="play-icon">▶</div>
+            Schedule a Demo
+          </button>
+        </div>
+        <div class="hero-social">
+          <div class="avatars">
+            <span class="av1" style="background-image: url('images/demo1.jpg'); background-size: cover;"></span>
+            <span class="av2" style="background-image: url('images/demo2.jpg'); background-size: cover;"></span>
+            <span class="av3" style="background-image: url('images/demo3.jpg'); background-size: cover;"></span>
+            <span class="av4" style="background-image: url('images/demo4.jpg'); background-size: cover;"></span>
+          </div>
+          <div class="social-text"><strong>2,400+ teams</strong> already using Swap-up</div>
+        </div>
+      </div>
+ 
+      <div class="hero-visual fade-up">
+        <div class="phone-glow"></div>
+        <div class="phone-wrap">
+          <div class="phone-bg">
+            <div class="phone-header">
+              <h4>This Week's Schedule</h4>
+              <div class="week-tabs">
+                <div class="week-tab active">Week</div>
+                <div class="week-tab">Month</div>
+              </div>
+            </div>
+            <div class="schedule-grid">
+              <div class="day-row">Mon &nbsp; Tue &nbsp; Wed &nbsp; Fri &nbsp; Sat &nbsp; Sun</div>
+              <div class="shift-row">
+                <div class="shift-chip chip-blue"><div class="chip-dot"></div>Anna Lee</div>
+                <div class="shift-chip chip-green"><div class="chip-dot"></div>David Smith</div>
+                <div class="shift-chip chip-purple"><div class="chip-dot"></div>Olivia B.</div>
+              </div>
+              <div class="day-row">Morning</div>
+              <div class="shift-row">
+                <div class="shift-chip chip-orange"><div class="chip-dot"></div>Mark Davis</div>
+                <div class="shift-chip chip-purple"><div class="chip-dot"></div>Sophia Kim</div>
+              </div>
+              <div class="day-row">Afternoon</div>
+              <div class="shift-row">
+                <div class="shift-chip chip-blue"><div class="chip-dot"></div>Jessica G.</div>
+                <div class="shift-chip chip-green"><div class="chip-dot"></div>Ethan Taylor</div>
+              </div>
+              <div class="day-row">Daniel White</div>
+              <div class="shift-row">
+                <div class="shift-chip chip-red"><div class="chip-dot"></div>Ryan Johnson</div>
+                <div class="shift-chip chip-green"><div class="chip-dot"></div>Grace Lee</div>
+              </div>
+              <div class="shift-row">
+                <div class="shift-chip chip-orange"><div class="chip-dot"></div>Kevin Wong</div>
+                <div class="shift-chip chip-purple"><div class="chip-dot"></div>Chris Miller</div>
+              </div>
+            </div>
+            <div class="phone-fab">+</div>
+          </div>
+          <div class="float-badge">
+            <div class="float-icon">✅</div>
+            <div class="float-text">
+              <strong>Swap Approved</strong>
+              <span>Anna ↔ Sophia • Mon shift</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <!-- NAVBAR -->
-    <nav id="navbar">
-        <div class="nav-container">
-            <div class="logo-wrapper">
-                <a href="#home"><img src="images/logo.png" alt="Swap-Up Logo" class="logo-img"></a>
-                <div class="logo"><a href="#home" class="linkLogo">Swap-Up</a></div>
+  </div>
+</section>
+ 
+<!-- PROBLEM -->
+<section id="problem" class="section">
+  <div class="container">
+    <div class="text-center fade-up">
+      <span class="label">The Problem</span>
+      <h2 class="section-title problem-title">Manual shift swapping is <span class="red">broken.</span></h2>
+      <p class="section-sub">Your team deserves better than spreadsheets, sticky notes, and crossed fingers.</p>
+    </div>
+    <div class="cards3 fade-up">
+      <div class="prob-card">
+        <div class="prob-icon">📞</div>
+        <h3>Endless phone calls</h3>
+        <p>Managers juggling dozens of calls just to fill a single open shift.</p>
+      </div>
+      <div class="prob-card">
+        <div class="prob-icon">💬</div>
+        <h3>Forgotten texts</h3>
+        <p>Shift swaps lost in group chats that nobody reads.</p>
+      </div>
+      <div class="prob-card">
+        <div class="prob-icon">⚠️</div>
+        <h3>Last-minute chaos</h3>
+        <p>No-shows and scheduling conflicts that derail the entire day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- FEATURES -->
+<section id="features" class="section">
+  <div class="container">
+    <div class="text-center fade-up">
+      <span class="label">Features</span>
+      <h2 class="section-title">Everything your team needs</h2>
+      <p class="section-sub">Purpose-built tools that eliminate scheduling headaches for managers and employees alike.</p>
+    </div>
+    <div class="features-grid fade-up">
+      <div class="feat-card">
+        <div class="feat-icon">📅</div>
+        <h3>Visual Scheduling</h3>
+        <p>A clean, intuitive calendar showing Morning, Afternoon, and Night shifts at a glance.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">↔️</div>
+        <h3>Smart Swap Requests</h3>
+        <p>A formal system for shift trades—tracked, organized, and impossible to lose.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">🛡️</div>
+        <h3>Built-in Accountability</h3>
+        <p>7-day advance notice requirement ensures managers are never caught off guard.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">⚡</div>
+        <h3>Instant Notifications</h3>
+        <p>Real-time push alerts so every team member knows exactly where they need to be.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">👥</div>
+        <h3>Team Visibility</h3>
+        <p>Full schedule view lets everyone see coverage gaps and available teammates instantly.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">🗄️</div>
+        <h3>Secure Backend</h3>
+        <p>Enterprise-grade PostgreSQL database keeps your scheduling data safe and reliable.</p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- HOW IT WORKS -->
+<section id="how" class="section">
+  <div class="container">
+    <div class="how-inner">
+      <div class="fade-up">
+        <span class="label">The Solution</span>
+        <h2 class="section-title">Request.<br>Approve.<br>Done.</h2>
+        <p style="color:var(--muted);margin-bottom:48px;font-size:.98rem;">A seamless 3-step flow that replaces hours of back-and-forth.</p>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">01</div>
+            <div class="step-content">
+              <div class="step-label">Step 01</div>
+              <h3>Employee requests a swap</h3>
+              <p>Pick the shift you need covered, choose a teammate, and submit your request in seconds.</p>
             </div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#pricing">Business Model</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <!-- <a href="#" class="login-btn">Open App</a> -->
-            <button class="mobile-toggle">☰</button>
+          </div>
+          <div class="step">
+            <div class="step-num">02</div>
+            <div class="step-content">
+              <div class="step-label">Step 02</div>
+              <h3>Manager reviews & approves</h3>
+              <p>One-tap approval from the manager dashboard. No more lengthy email chains.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">03</div>
+            <div class="step-content">
+              <div class="step-label">Step 03</div>
+              <h3>Everyone gets notified</h3>
+              <p>The schedule updates instantly. Both employees and the manager see the change in real-time.</p>
+            </div>
+          </div>
         </div>
-    </nav>
-
-    <!-- MAIN SECTION -->
-    <section id="home" class="main">
-        <div class="main-content">
-            <h1>Smart Shift Swap System</h1>
-            <p>Eliminate the inefficiencies, conflicts, and guesswork involved in manual shift swapping. Data-driven, fair, and instant.</p>
-            
-            <div class="main-buttons">
-                <button class="btn-big btn-primary">⬇ Get Started</button>
-                <button class="btn-big btn-dark">Book a Demo</button>
-            </div>
-
-            <div class="main-visual">
-                <div class="mockup-container">
-                    <div class="mockup-header">
-                        <div class="mockup-dot"></div>
-                        <div class="mockup-dot" style="background: #f4bd00;"></div>
-                        <div class="mockup-dot" style="background: #28c347;"></div>
-                    </div>
-                    <div class="mockup-body">
-                        <img src="images/demo2.jpg" alt="Demo image1">
-                        <img src="images/demo3.jpg" alt="Demo image2">
-                        <img src="images/demo4.jpg" alt="Demo image3">
-                        <img src="images/demo1.jpg" alt="Demo image4">
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="fade-up">
+        <img src="images/demo4.jpg" alt="Request Shift Trade" class="req-card-img" style="width: 100%; max-width: 450px; border-radius: 20px; box-shadow: 0 24px 48px rgba(0,0,0,0.2); display: block; margin: 0 auto;" />
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- FOR EVERYONE -->
+<section id="everyone" class="section">
+  <div class="container">
+    <div class="text-center fade-up">
+      <span class="label">For Everyone</span>
+      <h2 class="section-title">Built for your whole team</h2>
+    </div>
+    <div class="everyone-grid fade-up">
+      <div class="everyone-card">
+        <div class="everyone-card-header">
+          <div class="everyone-icon">💼</div>
+          <h3>For Managers</h3>
         </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about">
-        <div style="width: 90%; max-width: 1100px; margin: 0 auto;">
-            <h2 class="section-title">About the Project</h2>
-            <div class="glass-card" style="text-align: center;">
-                <p style="font-size: 18px; color: white; line-height: 2.5;">
-                    The Smart Shift Swap System is designed to eliminate the inefficiencies and conflicts involved in manual shift swapping. 
-                    Instead of random requests, our system uses predefined criteria to determine the most suitable replacement. 
-                    By analyzing availability, past swap frequency, overtime history, and current workload, Shift-UP recommends 
-                    coworkers who are not only available but also fair choices, preventing overworking or underutilizing employees.
-                </p>
-            </div>
+        <ul class="everyone-list">
+          <li><span class="list-dot"></span>Bird's-eye view of the entire week</li>
+          <li><span class="list-dot"></span>Automate shift trade approvals</li>
+          <li><span class="list-dot"></span>Reduce no-shows and conflicts</li>
+        </ul>
+      </div>
+      <div class="everyone-card">
+        <div class="everyone-card-header">
+          <div class="everyone-icon">👤</div>
+          <h3>For Employees</h3>
         </div>
-    </section>
-
-    <!-- FEATURES -->
-    <section id="features">
-        <div style="width: 100%; max-width: 1200px; margin: auto;">
-            <h2 class="section-title">Key Features</h2>
-            <div class="grid-container grid-features">
-                <div class="glass-card">
-                    <div class="icon">🔄</div>
-                    <h3>Smart Shift Swap</h3>
-                    <p>Uses predefined criteria like availability, swap frequency, and overtime history to recommend fair replacement staff.</p>
-                </div>
-                <div class="glass-card">
-                    <div class="icon">🔔</div>
-                    <h3>Real-Time Alerts</h3>
-                    <p>Instant notifications for swap requests, approvals, leave, and check-ins so managers never miss a beat.</p>
-                </div>
-                <div class="glass-card">
-                    <div class="icon">📍</div>
-                    <h3>Geo-Check-In/Out</h3>
-                    <p>GPS verification ensures managers and staff are physically within the restaurant premises when clocking in.</p>
-                </div>
-                <div class="glass-card">
-                    <div class="icon">📊</div>
-                    <h3>Analytics Dashboard</h3>
-                    <p>View punctuality rates, absentee trends, overtime patterns, and peak shortage analysis in one place.</p>
-                </div>
-                <div class="glass-card">
-                    <div class="icon">📅</div>
-                    <h3>Calendar & Sync</h3>
-                    <p>Visual roster layout that allows employees to sync work schedules with Google, Apple, or Outlook calendars.</p>
-                </div>
-                <div class="glass-card">
-                    <div class="icon">⚠️</div>
-                    <h3>Shift Fatigue Alerts</h3>
-                    <p>Automatically detects and alerts managers when an employee has less than 24 hours of rest between shifts.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PRICING -->
-    <section id="pricing">
-        <h2 class="section-title">Business Model</h2>
-
-        <!-- Toggle -->
-        <div class="pricing-toggle">
-            <button class="toggle-btn active">Monthly</button>
-            <button class="toggle-btn">Yearly</button>
-        </div>
-
-        <!-- Pricing Cards -->
-        <div class="pricing-grid">
-
-            <!-- FREE PLAN -->
-            <div class="price-card">
-                <h3>Free</h3>
-                <p class="sub">Great for students and personal use</p>
-                <div class="price" data-monthly="0.00" data-yearly="0.00">$0.00<span>/month</span></div>
-                <ul class="price-features">
-                    <li>✔ Upload 2D floor plans</li>
-                    <li>✔ Limited Auto 3D model generation</li>
-                    <li>✔ Access to Archion View</li>
-                    <li>✔ 2GB Storage for Files</li>
-                </ul>
-                <button class="btn-big btn-primary" style="width:100%;">Get Started</button>
-            </div>
-
-            <!-- PRO PLAN -->
-            <div class="price-card highlight">
-                <h3>Pro Plan</h3>
-                <p class="sub">Great for Freelancers & Professional use</p>
-                <div class="price" data-monthly="18.00" data-yearly="15.00">$18.00<span>/month</span></div>
-                <ul class="price-features">
-                    <li>✔ High-precision 3D generation</li>
-                    <li>✔ Full Archion Sim features</li>
-                    <li>✔ Advanced sharing controls</li>
-                    <li>✔ 100GB Storage for Files</li>
-                </ul>
-                <button class="btn-big btn-primary" style="width:100%;">Continue with Pro</button>
-            </div>
-
-            <!-- ENTERPRISE PLAN -->
-            <div class="price-card">
-                <h3>Enterprise Plan</h3>
-                <p class="sub">Great for Large scale enterprises</p>
-                <div class="price" data-monthly="22.00" data-yearly="20.00">$22.00<span>/month</span></div>
-                <ul class="price-features">
-                    <li>✔ Team workspaces & shared assets</li>
-                    <li>✔ Version history & model comparisons</li>
-                    <li>✔ Priority support</li>
-                    <li>✔ 5TB Shared Storage for Files</li>
-                </ul>
-                <button class="btn-big btn-dark" style="width:100%;">Contact team</button>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- TEAM -->
-    <section id="team">
-        <div style="width: 60%; max-width: 1200px; margin:auto;">
-            <h2 class="section-title">Our Crew</h2>
-            <div class="grid-container">
-                <div class="glass-card" style="text-align: center;">
-                    <div class="team-avatar"><img src="images/vihara.png" alt="Vihara Senanayake"></div>
-                    <h3>Vihara Senanayaka</h3>
-                    <p>Full Stack Developer</p>
-                </div>
-                <div class="glass-card" style="text-align: center;">
-                    <div class="team-avatar"><img src="images/umesh.jpg" alt="Umesh Isuranga"></div>
-                    <h3>Umesh Isuranga</h3>
-                    <p>Full Stack Developer</p>
-                </div>
-                <div class="glass-card" style="text-align: center;">
-                    <div class="team-avatar"><img src="images/Ashwin.png" alt="Ashwin Miron"></div>
-                    <h3>Ashwin Miron</h3>
-                    <p>Project Manager</p>
-                </div>
-                <div class="glass-card" style="text-align: center;">
-                    <div class="team-avatar"><img src="images/esala.png" alt="Esala Gamage"></div>
-                    <h3>Esala Gamage</h3>
-                    <p>Back-End Developer</p>
-                </div>
-                <div class="glass-card" style="text-align: center;">
-                    <div class="team-avatar"><img src="images/Vishwa.png" alt="Vishwa Kamal"></div>
-                    <h3>Vishwa Pathirana</h3>
-                    <p>Front-End Developer</p>
-                </div>
-                <div class="glass-card" style="text-align: center;">
-                    <div class="team-avatar"><img src="images/dulaj.jpg" alt="Dulaj Yuthsara"></div>
-                    <h3>Dulaj Yuthsara</h3>
-                    <p>Front-End Developer</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-        <div class="contact-wrapper">
-            <h2 style="margin-bottom: 20px; text-align: center;">Contact Us</h2>
-            <form action="contact.php" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-                <button class="btn-big btn-primary" style="width: 100%; justify-content: center;">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-col">
-                <h4>Swap-Up</h4>
-                <p style="color: #ccc;">Smart shift scheduling solution for the hospitality industry.</p>
-            </div>
-            <div class="footer-col">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#team">Team</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Legal</h4>
-                <ul>
-                    <li><a href="privacy.html"  target="_blank">Privacy Policy</a></li>
-                    <li><a href="terms.html" target="_blank">Terms of Service</a></li>
-                    <li><a href="#">Cookie Policy</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Contact</h4>
-                <ul>
-                    <li style="color: #ccc;">Email: swappupp@gmail.com</li>
-                    <li style="color: #ccc;">Phone: +94 75 259 6219</li>
-                    <li style="color: #ccc;">Colombo, Sri Lanka</li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-social">
-            <a href="https://www.facebook.com/share/1F8THg51bx/?mibextid=wwXIfr" class="social-bubble" target="_blank">
-                <i class="fab fa-facebook"></i>
-            </a>
-            <a href="https://www.instagram.com/swap___up?utm_source=qr&igsh=MWU0a3Z2NXhkdXpqdA==" class="social-bubble" target="_blank">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://x.com/swapup__?s=21" class="social-bubble" target="_blank">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://www.linkedin.com/company/swap-up/" class="social-bubble" target="_blank">
-                <i class="fab fa-linkedin"></i>
-            </a>
-        </div>
-        <div style="text-align: center; margin-top: 20px; color: #666;">
-            © 2025 Swap-Up. All Rights Reserved.
-        </div>
-    </footer>
-
-    <script>
-        // Navbar scroll
-        window.addEventListener('scroll', () => {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-
-        // Pricing toggle
-        const toggleBtns = document.querySelectorAll(".toggle-btn");
-        const priceElements = document.querySelectorAll(".price");
-
-        toggleBtns.forEach(btn => {
-            btn.addEventListener("click", () => {
-                toggleBtns.forEach(b => b.classList.remove("active"));
-                btn.classList.add("active");
-                const isYearly = btn.textContent.trim() === "Yearly";
-
-                priceElements.forEach(price => {
-                    const monthly = price.dataset.monthly;
-                    const yearly = price.dataset.yearly;
-                    price.innerHTML = `$${isYearly ? yearly : monthly}<span>${isYearly ? '/year' : '/month'}</span>`;
-                });
-            });
-        });
-
-        // Mobile menu toggle
-        const mobileToggle = document.querySelector(".mobile-toggle");
-        const navContainer = document.querySelector(".nav-container");
-        mobileToggle.addEventListener("click", () => {
-            navContainer.classList.toggle("open");
-        });
-    </script>
-
+        <ul class="everyone-list">
+          <li><span class="list-dot"></span>View your schedule in seconds</li>
+          <li><span class="list-dot"></span>Find coverage when life happens</li>
+          <li><span class="list-dot"></span>Take control of work-life balance</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- PRICING -->
+<section id="pricing" class="section">
+  <div class="container">
+    <div class="text-center fade-up">
+      <span class="label">Pricing</span>
+      <h2 class="section-title">Simple, predictable pricing</h2>
+      <p class="section-sub">No hidden fees. Choose the plan that fits your team.</p>
+    </div>
+    <div class="pricing-grid fade-up">
+      <!-- Starter -->
+      <div class="price-card">
+        <h3>Starter</h3>
+        <p class="price-desc">Perfect for small boutiques, local cafes, or new startups.</p>
+        <div class="price-amount">Free</div>
+        <div class="price-users">Up to 5 users</div>
+        <div class="price-tagline">"Get your team organized today—at zero cost."</div>
+        <div class="price-divider"></div>
+        <ul class="price-features">
+          <li><span class="check-icon">✓</span>Core scheduling calendar</li>
+          <li><span class="check-icon">✓</span>Basic shift swaps</li>
+          <li><span class="check-icon">✓</span>Mobile app access</li>
+          <li><span class="check-icon">✓</span>Morning / Afternoon / Night views</li>
+        </ul>
+        <button class="btn-plan">Start Free →</button>
+      </div>
+      <!-- Professional -->
+      <div class="price-card popular">
+        <div class="popular-badge">Most Popular</div>
+        <h3>Professional</h3>
+        <p class="price-desc">Ideal for restaurants, retail stores, and clinics.</p>
+        <div class="price-amount">$29<span>/month</span></div>
+        <div class="price-users">Up to 25 users</div>
+        <div class="price-tagline">"The complete toolkit for high-performing teams."</div>
+        <div class="price-divider"></div>
+        <ul class="price-features">
+          <li><span class="check-icon">✓</span>Everything in Starter</li>
+          <li><span class="check-icon">✓</span>Custom notice periods (7-day rule)</li>
+          <li><span class="check-icon">✓</span>Manager approval dashboard</li>
+          <li><span class="check-icon">✓</span>One-tap swap confirmations</li>
+          <li><span class="check-icon">✓</span>Priority support</li>
+        </ul>
+        <button class="btn-plan grad">Start 14-Day Trial →</button>
+      </div>
+      <!-- Enterprise -->
+      <div class="price-card">
+        <h3>Enterprise</h3>
+        <p class="price-desc">Built for multi-location franchises and large operations.</p>
+        <div class="price-amount">Custom</div>
+        <div class="price-users">Unlimited users</div>
+        <div class="price-tagline">"Scale your workforce without the administrative headache."</div>
+        <div class="price-divider"></div>
+        <ul class="price-features">
+          <li><span class="check-icon">✓</span>Everything in Professional</li>
+          <li><span class="check-icon">✓</span>Multi-unit management</li>
+          <li><span class="check-icon">✓</span>Cross-branch schedule sync</li>
+          <li><span class="check-icon">✓</span>Data exports & payroll integration</li>
+          <li><span class="check-icon">✓</span>Dedicated account manager</li>
+        </ul>
+        <button class="btn-plan schedule-demo-btn">Contact Sales →</button>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- TEAM -->
+<section id="team" class="section">
+  <div class="container">
+    <div class="text-center fade-up">
+      <span class="label">The Team</span>
+      <h2 class="section-title">Meet Our Crew</h2>
+      <p class="section-sub">The passionate people building Swap-up from the ground up.</p>
+    </div>
+    <div class="team-grid fade-up">
+      <div class="member-card">
+        <div class="member-avatar" style="background-image: url('images/vihara.png'); background-size: cover; background-position: center;"></div>
+        <div class="member-name">Vihara Senanayaka</div>
+        <div class="member-role">Full Stack Developer</div>
+      </div>
+      <div class="member-card">
+        <div class="member-avatar" style="background-image: url('images/umesh.jpg'); background-size: cover; background-position: center;"></div>
+        <div class="member-name">Umesh Isuranga</div>
+        <div class="member-role">Full Stack Developer</div>
+      </div>
+      <div class="member-card">
+        <div class="member-avatar" style="background-image: url('images/Ashwin.png'); background-size: cover; background-position: center;"></div>
+        <div class="member-name">Ashwin Miron</div>
+        <div class="member-role">Project Manager</div>
+      </div>
+      <div class="member-card">
+        <div class="member-avatar" style="background-image: url('images/esala.png'); background-size: cover; background-position: center;"></div>
+        <div class="member-name">Esala Gamage</div>
+        <div class="member-role">Back-End Developer</div>
+      </div>
+      <div class="member-card">
+        <div class="member-avatar" style="background-image: url('images/Vishwa.png'); background-size: cover; background-position: center;"></div>
+        <div class="member-name">Vishwa Pathirana</div>
+        <div class="member-role">Front-End Developer</div>
+      </div>
+      <div class="member-card">
+        <div class="member-avatar" style="background-image: url('images/dulaj.jpg'); background-size: cover; background-position: center;"></div>
+        <div class="member-name">Dulaj Yuthsara</div>
+        <div class="member-role">Front-End Developer</div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- CTA -->
+<section id="cta">
+  <div class="container fade-up">
+    <div class="cta-box">
+      <h2>Ready to simplify your shift management?</h2>
+      <p>Join 2,400+ teams who've ditched the chaos. Get started in under 2 minutes.</p>
+      <div class="cta-btns">
+        <button class="btn-cta-white">Get Started Free →</button>
+        <button class="btn-cta-outline schedule-demo-btn">Schedule a Demo</button>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner" style="flex-direction: column; gap: 24px; text-align: center;">
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="Swap-up Logo" class="footer-logo-img" />
+        <span>Swap-up</span>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/share/1F8THg51bx/?mibextid=wwXifr" class="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+        </a>
+        <a href="https://x.com/swapup__?s=21" class="social-link" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+        </a>
+        <a href="https://www.linkedin.com/company/swap-up/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
+        <a href="https://www.instagram.com/swap__up?utm_source=qr&igsh=MWU0a3Z2NXhkdXpydA==" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        </a>
+      </div>
+      <div class="footer-links">
+        <a href="privacy.html" target="_blank">Privacy Policy</a>
+        <a href="Terms.html" target="_blank">Terms of Service</a>
+      </div>
+      <div class="footer-copy">© 2026 Swap-up. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+ 
+<script>
+  // Fade-up on scroll
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+</script>
+<!-- ─── CONTACT MODAL ─── -->
+<div id="contactModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-box">
+    <button class="modal-close" id="closeModal" aria-label="Close">&times;</button>
+    <h2 class="modal-title" id="modalTitle">Contact Us</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-group">
+        <input type="text" id="contactName" name="name" class="form-input" placeholder="Your Name" required />
+      </div>
+      <div class="form-group">
+        <input type="email" id="contactEmail" name="email" class="form-input" placeholder="Your Email" required />
+      </div>
+      <div class="form-group">
+        <textarea id="contactMessage" name="message" class="form-input form-textarea" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="form-submit">Send Message</button>
+    </form>
+    <div class="form-success" id="formSuccess">
+      <div class="success-icon">✓</div>
+      <h3>Message Sent!</h3>
+      <p>Thanks for reaching out. We'll get back to you within 24 hours.</p>
+    </div>
+  </div>
+</div>
+ 
+<script>
+  const modal      = document.getElementById('contactModal');
+  const closeBtn   = document.getElementById('closeModal');
+  const form       = document.getElementById('contactForm');
+  const successMsg = document.getElementById('formSuccess');
+ 
+  document.querySelectorAll('.schedule-demo-btn').forEach(btn => btn.addEventListener('click', openModal));
+ 
+  function openModal() {
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal() {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+    setTimeout(() => {
+      form.reset();
+      form.style.display = '';
+      successMsg.style.display = 'none';
+      clearErrors();
+    }, 300);
+  }
+ 
+  modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+  closeBtn.addEventListener('click', closeModal);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && modal.classList.contains('active')) closeModal(); });
+ 
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    clearErrors();
+ 
+    const nameEl    = document.getElementById('contactName');
+    const emailEl   = document.getElementById('contactEmail');
+    const messageEl = document.getElementById('contactMessage');
+    let valid = true;
+ 
+    if (!nameEl.value.trim())    { showError(nameEl, 'Please fill out this field.'); valid = false; }
+    if (!emailEl.value.trim())   { showError(emailEl, 'Please fill out this field.'); valid = false; }
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailEl.value)) { showError(emailEl, 'Please enter a valid email.'); valid = false; }
+    if (!messageEl.value.trim()) { showError(messageEl, 'Please fill out this field.'); valid = false; }
+    if (!valid) return;
+ 
+    // Show loading state
+    const submitBtn = form.querySelector('.form-submit');
+    const originalText = submitBtn.textContent;
+    submitBtn.textContent = 'Sending…';
+    submitBtn.disabled = true;
+    submitBtn.style.opacity = '0.7';
+ 
+    try {
+      const res = await fetch('contact.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name:    nameEl.value.trim(),
+          email:   emailEl.value.trim(),
+          message: messageEl.value.trim()
+        })
+      });
+ 
+      if (!res.ok) {
+        throw new Error(`Server Error: ${res.status}`);
+      }
+      const data = await res.json();
+ 
+      if (data.success) {
+        form.style.display = 'none';
+        successMsg.style.display = 'flex';
+      } else {
+        // Show server-side error under the submit button
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+        submitBtn.style.opacity = '';
+        const errDiv = document.createElement('p');
+        errDiv.className = 'server-error';
+        errDiv.textContent = data.message || 'Something went wrong. Please try again.';
+        errDiv.style.cssText = 'color:#ef4444;font-size:.82rem;text-align:center;margin-top:10px;';
+        form.appendChild(errDiv);
+      }
+    } catch (err) {
+      console.error('Contact Form Error:', err);
+      submitBtn.textContent = originalText;
+      submitBtn.disabled = false;
+      submitBtn.style.opacity = '';
+      
+      const errDiv = document.createElement('p');
+      errDiv.className = 'server-error';
+      
+      // Determine error type for better user message
+      let msg = 'Submission failed. ';
+      if (window.location.protocol === 'file:') {
+        msg += 'Please run this from a local web server (like XAMPP or PHP -S) as PHP files cannot be executed directly from a folder.';
+      } else if (err.message.includes('Server Error')) {
+        msg += 'The PHP server is reachable but returned an error. Please check your PHP logs.';
+      } else {
+        msg += 'Could not connect to contact.php. Ensure your PHP server is running and reachable.';
+      }
+      
+      errDiv.textContent = msg;
+      errDiv.style.cssText = 'color:#ef4444;font-size:.82rem;text-align:center;margin-top:10px;line-height:1.4;';
+      form.appendChild(errDiv);
+    }
+  });
+ 
+  function showError(input, msg) {
+    input.classList.add('input-error');
+    const tip = document.createElement('span');
+    tip.className = 'error-tip'; tip.textContent = msg;
+    input.parentNode.appendChild(tip);
+  }
+  function clearErrors() {
+    document.querySelectorAll('.error-tip').forEach(el => el.remove());
+    document.querySelectorAll('.input-error').forEach(el => el.classList.remove('input-error'));
+    document.querySelectorAll('.server-error').forEach(el => el.remove());
+  }
+</script>
 </body>
 </html>
