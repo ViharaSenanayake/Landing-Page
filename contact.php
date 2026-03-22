@@ -10,7 +10,9 @@
  */
 
 
-// ─── CORS & Headers ───────────────────────────────────────────
+// ─── Error Handling & CORS ─────────────────────────────────────
+ini_set('display_errors', 0);
+error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING);
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *'); // Restrict to your domain in production: 'https://swapup.com'
 header('Access-Control-Allow-Methods: POST');
@@ -75,7 +77,7 @@ elseif (strlen($message) < 10) {
 
 
 // Block header injection attempts
-foreach ([$name, $email, $message] as $field) {
+foreach ([$name, $email] as $field) {
   if (preg_match('/[\r\n]/', $field)) {
     http_response_code(400);
     echo json_encode(['success' => false, 'message' => 'Invalid input detected.']);
